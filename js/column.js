@@ -9,9 +9,9 @@ function Column(name) {
 		// TWORZENIE NOWYCH WĘZŁÓW
 		var column = $('<div class="column"></div>');
 		var columnTitle = $('<h2 class="column-title">' + self.name + '</h2>');
-		var columnCardList = $('<ul class="card-list"></ul>');
-		var columnDelete = $('<button class="btn-delete">x</button>');
-		var columnAddCard = $('<button class="column-add-card">Dodaj kartę</button>');
+		var columnCardList = $('<ul class="column-card-list"></ul>');
+		var columnDelete = $('<button class="btn-delete"><span class="fa fa-trash-o" aria-hidden="true"></span></button>');
+		var columnAddCard = $('<button class="column-add-card"><span class="fa fa-plus plus" aria-hidden="true"></span></button>');
 
 		// PODPINANIE ODPOWIEDNICH ZDARZEŃ POD WĘZŁY
 		columnDelete.click(function () {
@@ -39,3 +39,4 @@ Column.prototype = {
 		this.element.remove();
 	}
 };
+

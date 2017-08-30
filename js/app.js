@@ -20,8 +20,8 @@ board.createColumn(doingColumn);
 board.createColumn(doneColumn);
 
 // TWORZENIE NOWYCH EGZEMPLARZY KART
-var card1 = new Card('Nowe zadanie');
-var card2 = new Card('stworzyc tablice kanban');
+//var card1 = new Card();
+//var card2 = new Card();
 
 // DODAWANIE KART DO KOLUMN
 todoColumn.createCard(card1);

@@ -101,6 +101,7 @@ $(function () {
 			this.element.remove();
 		}
 	}
+    
 
 	// TWORZENIE NOWYCH EGZEMPLARZY KOLUMN
 	var todoColumn = new Column('Do zrobienia');
@@ -120,3 +121,4 @@ $(function () {
 	todoColumn.createCard(card1);
 	doingColumn.createCard(card2);
 })
+
