@@ -8,7 +8,7 @@ function Card(description) {
 
 	function createCard() {
 		var card = $('<li class="card"></li>');
-		var cardDeleteBtn = $('<button class="btn-delete"><span class="fa fa-trash-o trash" aria-hidden="true"></span></button>');
+		var cardDeleteBtn = $('<button class="btn-delete-card"><span class="fa fa-trash-o trash" aria-hidden="true"></span></button>');
 		var cardDescription = $('<p class="card-description"></p>');
 
 		cardDeleteBtn.click(function () {

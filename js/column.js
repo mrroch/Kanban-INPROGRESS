@@ -18,11 +18,11 @@ function Column(name) {
 			self.deleteColumn();
 		});
 
-		columnAddCard.click(function (event) {
+		columnAddCard.click(function () {
 			event.preventDefault();
 			self.createCard(new Card(prompt("Wpisz nazwę karty")));
-		});
-
+		});  
+        
 		// KONSTRUOWANIE ELEMENTU KOLUMNY
 		column.append(columnTitle)
 			.append(columnDelete)

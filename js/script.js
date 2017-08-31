@@ -55,8 +55,30 @@ $(function () {
 			});
 			columnAddCard.click(function (event) {
 				event.preventDefault();
-				self.createCard(new Card(prompt("Wpisz nazwę karty")));
-			});
+				self.createCard(new Card(name));
+            
+            swal({
+    title: "Who are you?",
+    text: "Please enter your name:",
+    type: "input",
+    showCancelButton: true,
+    closeOnConfirm: false,
+    animation: "slide-from-top",
+    inputPlaceholder: "player's name"
+  },
+  function(inputValue){
+    if (inputValue === false) return false;
+
+    if (inputValue === "") {
+      swal.showInputError("You need to write your name!");
+      return false;
+    }
+    swal("Let's start!", "Good luck! " + inputValue);
+    self.createCard = inputValue;
+      
+                
+    });
+                
 
 			// KONSTRUOWANIE ELEMENTU KOLUMNY
 			column.append(columnTitle)
