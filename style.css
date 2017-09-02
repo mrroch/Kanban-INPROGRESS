@@ -46,7 +46,7 @@ h1 {
     background-color: #424E4E;
     position: relative;
     padding-bottom: 30px;
-    border: 8px solid #B7685B;
+    border: 10px solid #B7685B;
     min-height: 300px;
 }
 
@@ -68,18 +68,21 @@ h1 {
     top: 25px;
     right: 380px;
     background-color: #fff;
+    color: #568A7E;
     font-size: 20px;
     padding: 10px;
-    border: 2px solid #B7685B;
+    border: 2px dashed #568A7E;
 }
 
 .create-column:hover {
     background-color: #424E4E;
     color: #fff;
+    border: 2px solid #B7685B;
+    transform: scale(1.15);
 }
 
 .btn-delete {
-    background-color: red;
+    background-color: #B7685B;
     padding: 10px;
     position: absolute;
     top: 0;
@@ -92,20 +95,22 @@ h1 {
 }
 
 .btn-delete-card {
-    background-color: red;
+    background-color: #DDC997;
     padding: 10px;
     position: absolute;
-    top: 0;
-    right: 0;
+    top: -23px;
+    left: 50%;
     width: 30px;
-    height: 30px;
+    height: 45px;
     cursor: pointer;
-    font-size: 15px;
+    font-size: 18px;
     color: #fff;
+    z-index: 1;
+    color: #424E4E;
 }
 
 .column-add-card {
-    background-color: green;
+    background-color: #568A7E;
     padding: 10px;
     position: absolute;
     bottom: 20px;
@@ -126,17 +131,24 @@ h1 {
     font-size: 80px;
 }
 
-.btn-delete:hover,
+.btn-delete:hover {
+    background-color: #fff;
+    color: #424E4E;
+    border: 3px dashed #568A7E;
+    font-size: 28px;
+}
+
 .btn-delete-card:hover {
-    background-color: darkred;
+    background-color: #DACCA9;
 }
 
 .column-add-card:hover {
-    background-color: darkgreen;
+    background-color: #2D6D5E;
+    font-size: 15px;
 }
 
 .column-placeholder {
-    border: 2px dashed black;
+    border: 2px dashed #fff;
 }
 
 
@@ -162,12 +174,14 @@ h1 {
 
 .card {
     background-color: #ECE573;
-    margin: 10px 10px;
+    margin: 15px 10px 50px 10px;
     max-width: 330px;
+    box-shadow: 5px 5px #A9A452;
+    position: relative;
 }
 
 .card-placeholder {
-    border: 1px dashed black;
+    border: 2px dashed #fff;
     width: 285px;
     margin: 20px;
 }
