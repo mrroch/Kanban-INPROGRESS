@@ -1,0 +1,101 @@
+.circle1 {
+    position: absolute;
+    top: -80px;
+    left: 15%;
+    width: 20px;
+    height: 20px;
+    background-color: #9EB1B1;
+    border-radius: 50%;
+}
+
+.rope1 {
+    background-color: #364444;
+    width: 3px;
+    height: 110px;
+    transform: rotate(45deg);
+    position: absolute;
+    top: -79px;
+    left: 11.9%;
+    z-index: 1;
+    border-bottom-right-radius: 55px;
+}
+
+.rope2 {
+    background-color: #364444;
+    width: 3px;
+    height: 110px;
+    transform: rotate(-45deg);
+    position: absolute;
+    top: -79px;
+    left: 19.5%;
+    z-index: 1;
+    border-bottom-left-radius: 55px;
+}
+
+.circle2 {
+    position: absolute;
+    top: -80px;
+    left: 48.5%;
+    width: 20px;
+    height: 20px;
+    background-color: #9EB1B1;
+    border-radius: 50%;
+}
+
+.rope3 {
+    background-color: #364444;
+    width: 3px;
+    height: 110px;
+    transform: rotate(45deg);
+    position: absolute;
+    top: -79px;
+    left: 45.4%;
+    z-index: 1;
+    border-bottom-right-radius: 55px;
+}
+
+.rope4 {
+    background-color: #364444;
+    width: 3px;
+    height: 110px;
+    transform: rotate(-45deg);
+    position: absolute;
+    top: -79px;
+    left: 53%;
+    z-index: 1;
+    border-bottom-left-radius: 55px;
+}
+
+.circle3 {
+    position: absolute;
+    top: -80px;
+    right: 15%;
+    width: 20px;
+    height: 20px;
+    background-color: #9EB1B1;
+    border-radius: 50%;
+}
+
+.rope5 {
+    background-color: #364444;
+    width: 3px;
+    height: 110px;
+    transform: rotate(-45deg);
+    position: absolute;
+    top: -79px;
+    right: 11.9%;
+    z-index: 1;
+    border-bottom-left-radius: 55px;
+}
+
+.rope6 {
+    background-color: #364444;
+    width: 3px;
+    height: 110px;
+    transform: rotate(45deg);
+    position: absolute;
+    top: -79px;
+    right: 19.5%;
+    z-index: 1;
+    border-bottom-right-radius: 55px;
+}

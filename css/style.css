@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Kalam:400,700&subset=latin-ext');
+@import url('ropes.css');
 body {
     font-family: 'Kalam', cursive;
     box-sizing: border-box;
@@ -49,7 +50,6 @@ h1 {
     border: 10px solid #B7685B;
     min-height: 300px;
 }
-
 
 .column h2 {
     color: #fff;
@@ -184,108 +184,4 @@ h1 {
     border: 2px dashed #fff;
     width: 285px;
     margin: 20px;
-}
-
-/* ROPES */
-
-.circle1 {
-    position: absolute;
-    top: -80px;
-    left: 190px;
-    width: 20px;
-    height: 20px;
-    background-color: #9EB1B1;
-    border-radius: 50%;
-}
-
-.rope1 {
-    background-color: #364444;
-    width: 3px;
-    height: 112px;
-    transform: rotate(45deg);
-    position: absolute;
-    top: -80px;
-    left: 151px;
-    z-index: 1;
-    border-bottom-right-radius: 55px;
-}
-
-.rope2 {
-    background-color: #364444;
-    width: 3px;
-    height: 112px;
-    transform: rotate(-45deg);
-    position: absolute;
-    top: -80px;
-    left: 246px;
-    z-index: 1;
-    border-bottom-left-radius: 55px;
-}
-
-.circle2 {
-    position: absolute;
-    top: -80px;
-    left: 590px;
-    width: 20px;
-    height: 20px;
-    background-color: #9EB1B1;
-    border-radius: 50%;
-}
-
-.rope3 {
-    background-color: #364444;
-    width: 3px;
-    height: 112px;
-    transform: rotate(45deg);
-    position: absolute;
-    top: -80px;
-    left: 550px;
-    z-index: 1;
-    border-bottom-right-radius: 55px;
-}
-
-.rope4 {
-    background-color: #364444;
-    width: 3px;
-    height: 112px;
-    transform: rotate(-45deg);
-    position: absolute;
-    top: -80px;
-    left: 646px;
-    z-index: 1;
-    border-bottom-left-radius: 55px;
-}
-
-.circle3 {
-    position: absolute;
-    top: -80px;
-    right: 190px;
-    width: 20px;
-    height: 20px;
-    background-color: #9EB1B1;
-    border-radius: 50%;
-}
-
-.rope5 {
-    background-color: #364444;
-    width: 3px;
-    height: 111px;
-    transform: rotate(-45deg);
-    position: absolute;
-    top: -80px;
-    right: 150px;
-    z-index: 1;
-    border-bottom-right-radius: 55px;
-}
-
-.rope6 {
-    background-color: #364444;
-    width: 3px;
-    height: 109px;
-    transform: rotate(45deg);
-    position: absolute;
-    top: -80px;
-    right: 246px;
-    z-index: 1;
-    border-bottom-left-radius: 55px;
 }
