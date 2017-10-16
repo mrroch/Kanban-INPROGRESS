@@ -1,9 +1,7 @@
-// KLASA KANBAN CARD
-function Card(description) {
+function Card(id, name) {
 	var self = this;
-
-	this.id = randomString();
-	this.description = description;
+	this.id = id;
+	this.name = name || 'No name given';
 	this.element = createCard();
 
 	function createCard() {
@@ -12,17 +10,33 @@ function Card(description) {
 		var cardDescription = $('<p class="card-description"></p>');
 
 		cardDeleteBtn.click(function () {
-			self.removeCard();
+			alertify.confirm('Delete card', 'Crush the "' + self.name + '" card?', function () {
+				self.removeCard();
+				alertify.message('Card "' + self.name + '" is crushed');
+			}, function () {
+				alertify.error('You almost delete it!');
+			}).set('labels', {
+				ok: 'Do you want to crush it?',
+				cancel: 'Keep it. For now :)'
+			});
 		});
 
 		card.append(cardDeleteBtn);
-		cardDescription.text(self.description);
-		card.append(cardDescription)
+		cardDescription.text(self.name);
+		card.append(cardDescription);
 		return card;
 	}
 }
+
 Card.prototype = {
 	removeCard: function () {
-		this.element.remove();
+		var self = this;
+		$.ajax({
+			url: baseUrl + '/card/' + self.id,
+			method: 'DELETE',
+			success: function () {
+				self.element.remove();
+			}
+		});
 	}
 }
